@@ -2,6 +2,7 @@
   margin:0; padding: 0;
   box-sizing: border-box; -moz-box-sizing: border-box;
   outline: 0;
+ 
 }
 
 body {
@@ -9,19 +10,38 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-header{
+.navbar {
+  
+}
+.title {
+  margin: 90px 90px;
+  font-size: 150px;
+  position: relative;
+  top: 100px;
   display: flex;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.logo{
-  margin-bottom: 2px;
-  width: 50px;
-  height: 50px;
-}
-
-
 .item{
+  color: white;
+  
+}
+.para {
+  margin: 96px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.btn {
+  position: relative;
+  top: 20px;
+  left: 100px;
+}
+
+
+/*.item{
   color: white;
   margin-right: 20px;
   padding: 0px 10px;
@@ -42,3 +62,4 @@ header{
   display: inline-block;
 }
 */
+
