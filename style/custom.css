@@ -37,6 +37,8 @@ body {
 body div h2 span{
   color: orange;
 }
+
+
 .para {
   margin: 96px;
   font-family: ‘Raleway’, sans-serif;
@@ -95,6 +97,15 @@ h4 {
 
 
 
+#liveWeatherBtn{
+  top: -50px;
+   border: 0.1px white;
+   border-radius: 15px;
+}
+
+input {
+  border-radius: 25px;
+}
 /*.item{
   color: white;
   margin-right: 20px;
