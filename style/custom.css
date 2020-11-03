@@ -2,37 +2,103 @@
   margin:0; padding: 0;
   box-sizing: border-box; -moz-box-sizing: border-box;
   outline: 0;
+  
  
 }
 
-body {
+
+
+header {
   background-image: url(../assets/images/front-page-background.png);
   background-size: cover;
+  background-position: center;
+  height: 100vh;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+#menu {
+  background: rgba(0, 3, 39, 0.39);
+  box-shadow: 0px 15px 10px - 15px #111;
+}
+
+.text{
+  margin-top: 200px;
+}
+
+.ui.weather {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 100px;
+}
+
+#weather-section {
+  background-image: url(../assets/images/weatherBackground.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-width: fit-content;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+#input {
+}
+
+
+
+
+
+
+
+
+.menu{
+  border: 0px!important;
+}
+.navbar{
+  background-color: transparent !important; 
+}
+
+.sc-main.segment{
+  min-height: 100vh;
+}
+
+
 .welcome {
   position: relative;
-  top:100px;
-  font-size: 20px;
-  display:flex;
+  top:120px;
+  font-size: 20px!important;
+  display:flex!important;
+  right: 120px;
+}
+
+.slogan{
+  position: relative;
+  top: 67px;
+  font-family: 'Raleway', sans-serif!important;
+  right: 200px;
 }
 .title{
-  margin: 90px 90px;
-  font-size: 90px;
+  font-size: 90px!important;
   position: relative;
-  top: 20px;
+  font-family: 'DM Serif Display', serif;
+  right: -50px;
+  top: 90px;
   display: flex;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-}
-.item{
-  color: white; 
 }
 
 body div h2 span{
   color: orange;
 }
 
+.sideBar{
+  font-size: 10px;
+}
 
 .para {
   margin: 96px;
@@ -45,12 +111,14 @@ body div h2 span{
 }
 
 .btn {
-  left: 100px;
+  left: -380px;
   width: 150px;
   font-size: smaller;
   position: relative;
+
   
 }
+
 
 .selection {
   width: 45px;
@@ -59,13 +127,15 @@ body div h2 span{
 }
 
 #curConverterBtn{
-  top: -50px;
+  top: 70px;
+  box-shadow: 0.5px 1px 4px black;
   background-color: orange;
   border-radius: 15px;
 }
 
 #liveWeatherBtn{
-  top: -50px;
+  top: 70px;
+  box-shadow: 1px 1px 10px black;
    border: 0.1px white;
    border-radius: 15px;
 }
@@ -73,6 +143,38 @@ body div h2 span{
 input {
   border-radius: 25px;
 }
+
+i.home .icon{
+  width:10px;
+}
+.item .home{
+  margin: 100px!important;
+}
+
+.logo {
+  position: relative;
+  left: 19px;
+  width: 80px;
+  display: block;
+  line-height: 70px!important;
+
+  
+}
+
+.fixed{
+  padding-right: 8%!important;
+  padding-left: 8%!important;
+}
+
+#main-weather{
+  background-image: url(../assets/images/weather-background-01.png);
+  background-size: cover;
+  min-width: 800px;
+  background-repeat: no-repeat;
+  padding: 100vh;
+  width: max-content;
+}
+
 /*.item{
   color: white;
   margin-right: 20px;
@@ -95,3 +197,98 @@ input {
 }
 */
 
+/*1021px media query title
+change background
+
+672px remove menu and logo and show hamburger menu*/
+
+@media (max-width: 768px) {
+ 
+  
+  .title{
+    top:200px;
+    font-size: 80px!important;
+    position: relative;
+    left:100px;
+  }
+
+  .welcome{
+    position: relative;
+    top:200px;
+    left: 100px;
+    font-size: 30px!important;
+  }
+
+  .slogan {
+    top:200px;
+    position: relative;
+    left:-120px
+  }
+
+  .btn{
+    position: relative;
+    left: -90px;
+  }
+
+  #curConverterBtn{
+    top: 200px;
+
+  }
+
+  #liveWeatherBtn{
+    top: 200px;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .ui.fixed.menu{
+    display: none!important;
+  }
+  
+}
+
+.marginlefting {
+  margin-left: 60px !important;
+}
+
+.displaynone {
+  display: none !important;
+}
+
+.displayblock {
+  display: block !important;
+}
+
+.sidebar .item i {
+  font-size: 24px;
+  margin-top: -5px !important;
+}
+
+.logo {
+  height: 48px !important;
+  padding: 10px !important;
+}
+
+.logo img {
+  width: 100% !important;
+  height: 38px !important;
+}
+
+.title.item {
+  padding: .92857143em 1.14285714em !important;
+}
+
+.dropdown .menu .header {
+  padding-top: 3.9px!important;
+  padding-bottom: 3.9px!important;
+}
+
+@media (max-width: 768px){
+  /*tablet*/
+}
+
+@media (max-width: 375px){
+  /*smaller phone*/
+}
