@@ -7,50 +7,213 @@
   <meta name="author" content="Imran Khan" />
   <meta name="author" content="Ola Isola" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
   <!--Semantics css file-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
   <!--Add favicon-->
-  <link rel="icon" type="image/jpg" href="./assets/images/favicon.png"/> 
+  <link rel="icon" type="image/jpg" href="./assets/images/smaller-logo-01.png"/> 
   <!--Add custom css-->
   <link href="./style/custom.css" rel="stylesheet" />
   <title>X-change Away.</title>
 </head>
-<header>
-    <div class="ui top fixed inverted navbar icon menu main">
+<body>
+
+  
+  
+  
+    <!-- Site content !-->
+  <header id="main">
+  
+  <div class="ui large top fixed hidden menu" id="menu">
+    <div class="ui container">
       <div class="item">
-        <div class="ui avatar image">
-          <img src="./assets/images/smaller-logo-01.png">
-        </div>
-        <div class="content">
-        </div>
-      </div>     
-        <div class="right menu slide">
-          
-          <div class="item">
-             Home
+        <img id="home" src="./assets/images/smaller-logo-01.png">
+      </div>
+      <div class="menu right">
+      <a href="#home" class="active item">Home</a>
+      <a href="#currency" class="item">Currency Converter</a>
+      <a href="#weather" class="item">Weather Dashboard</a>
+    </div>
+  </div>
+  </div>
+  <!--Sidebar Menu-->
+  <div class="ui vertical inverted sidebar menu left">
+    <a href="" class="active item">::before Home</a>
+    <a href="" class="active item">::Currency Converter</a>
+    <a href="" class="active item">Weather Dashboard</a>
+  </div>
+  <div class="ui container">
+      <div class="ui two column grid padded">
+        <div class="row text">
+          <div class="colum">
+            <h4 class="ui align center" style="font-size: 30px; color: white;">WELCOME TO</h4>
+            <h2 class="ui center aligned header" style="color: white; font-size: 90px;">EX <span class="ui orange">AWAY</span></h2>
+            <p class="ui header" style="color: greenyellow;">BEST WAY TO EXCHANGE</p>
           </div>
-          <div class="item">
-            Currency Exchange
-          </div>
-          <div class="item">
-             Weather Dashboard
-          </div>
         </div>
-       
       </div>
     </div>
-  </header> 
-  <body>
+
+    <!--Currency section-->
+
+   <div class="ui container">   
+        <div>
+          <button id="currency" class="ui button orange" style="box-shadow: 1px 1px 10px black;">Currency Converter</button>
+          <button  class="ui button inverted orange" style="box-shadow: 1px 1px 10px black;">Weather Dashboard</button>
+        </div>   
+      </div>
+  </header>
+
+  <div id="currency" class="ui container" style="margin-top:100px;">
     <div>
-      <h6 class="welcome">WELCOME TO...</h6>
-      <h2 class="title">EX <span>AWAY</span></h2>
-      <p class="para">BEST WAY TO EXCHANGE</p>
+      <h1 class="ui center aligned header">Currency Converter</h1>
     </div>
-    <div class="">
-      <button class="ui button btn" id="curConverterBtn">CURRENCY <br/>CONVERTER</button>
-      <button class="ui inverted button btn" id="liveWeatherBtn">LIVE<br/> WEATHER</button>
+  </div>
+  <div class="ui two column centered grid">
+    <div class="column"></div>
+    <div class="four column centered row">
+      <div class="column"></div>
+      <div class="column"></div>
+    </div>
+  </div>
+  <div class="ui container">
+   
+    <h1>Currency converter</h1>
+              
+            
+          
+            <!--Row 2-->
+           <div class="row">
+            <!--Row 2 column 1-->
+            <div>
+              <p>AMOUNT:</p>
+             
+                <input class="currencyInput" type="number" placeholder="enter amount">
+                <select class="currencyInput">
+                    <!--<option value="currency">Currency</option>-->
+                </select>
+              
+            </div>
+
+             <!--Row 2 column 1-->
+             <div>
+              <p>AMOUNT:</p>
+             
+                <input  class="currencyInput" type="number" placeholder="enter amount...">
+                <select class="currencyInput">
+                    <!--<option value="currency">Currency</option>-->
+                </select>
+              </div>
+           
+           </div>
+          </div> 
+    </section>
+
+          
+      <!--Weather Dashboard-->
+<section> 
+  <div id="weather" class="ui centered grid">
+      <div id="weather-section" class="ui container" style="margin-top:100px;">
+        <div>
+          <h1 class="ui center aligned header weather">Weather Dashboard</h1>
+        </div>
+        <div class="ui icon input">
+          <input id="cityname" type="text" placeholder="City Name...">
+          <i id="searchBtn" class="search icon"></i>
+        </div>
+        <div class="ui three column grid">
+          <div class="row" style="margin-top:60px;">
+            <div class="column">
+              <div class="ui segment">
+                <div class="ui center aligned icon header">
+                  <img src="" class="day2icon icon"/>
+                  <h4 class="ui header">DD/MM/YYY</h4>
+                </div>
+                <p>Temperature:...</p>
+                <p>Humidity:...</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="ui segment">
+                <div class="ui center aligned icon header">
+                  <img src="" class="day2icon icon"/>
+                  <h4 class="ui header">DD/MM/YYY</h4>
+                </div>
+                <p>Temperature:...</p>
+                <p>Humidity:...</p>
+              </div>
+          </div>
+          <div class="column">
+            <div class="ui segment">
+              <div class="ui center aligned icon header">
+                <img src="" class="day2icon icon"/>
+                <h4 class="ui header">DD/MM/YYY</h4>
+              </div>
+              <p>Temperature:...</p>
+              <p>Humidity:...</p>
+            </div>
+            
+        </div>
+        
       </div>
+
+      <div class="ui container">
+        <div>
+    
+        </div>
+        <div class="ui three column grid">
+          <div class="row" style="margin-top:60px;">
+            <div class="column">
+              <div class="ui segment">
+                <div class="ui center aligned icon header">
+                  <img src="" class="day2icon icon"/>
+                  <h4 class="ui header">DD/MM/YYY</h4>
+                </div>
+                <p>Temperature:...</p>
+                <p>Humidity:...</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="ui segment">
+                <div class="ui center aligned icon header">
+                  <img src="" class="day2icon icon"/>
+                  <h4 class="ui header">DD/MM/YYY</h4>
+                </div>
+                <p>Temperature:...</p>
+                <p>Humidity:...</p>
+              </div>
+          </div>
+          <div class="column">
+            <div class="ui segment">
+              <div class="ui center aligned icon header">
+                <img src="" class="day2icon icon"/>
+                <h4 class="ui header">DD/MM/YYY</h4>
+              </div>
+              <p>Temperature:...</p>
+              <p>Humidity:...</p>
+            </div>
+            
+        </div>
+        
+      </div>
+      </div>
+    </section>
+
+      <!--<div class="ui text sc-header-content container">
+        <h4 class="ui inverted header welcome">WELCOME TO</h4>
+        <h2 class="title ui inverted header">EX<span>AWAY</span></h2>
+        <p class="ui inverted header slogan">BEST WAY TO EXCHANGE</p>
+        <div class="">
+          <button class="ui button large btn" id="curConverterBtn">CURRENCY <br/>CONVERTER</button>
+          <button class="ui inverted large button btn" id="liveWeatherBtn">LIVE<br/> WEATHER</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+</header>
+
      <div class="ui two column centered grid">
         <div class="column"></div>
         <div class="four column centered row">
@@ -65,9 +228,9 @@
         </div>
 
           <div class="ui two column grid">
-            <!--Row 1 -->
+            Row 1
             <div class="row">
-              <!--Row 1 Column 1 dropdown-->
+              Row 1 Column 1 dropdown
              <div class="eight wide column">
                <div class="ui search selection dropdown">
                 <input type="hidden" name="country">
@@ -77,7 +240,7 @@
                </div>
             </div>
 
-                  <!--Row 1 Column 2 dropdown-->
+                Row 1 Column 2 dropdown
               <div class="eight wide column">
                  <div class="ui search selection dropdown">
                    <input type="hidden" name="country">
@@ -88,9 +251,9 @@
              </div>
             </div>
           
-            <!--Row 2-->
+            Row 2
            <div class="row">
-            <!--Row 2 column 1-->
+            Row 2 column 1
             <div class="eight wide column">
               <p>AMOUNT:</p>
               <div class="ui input">
@@ -98,7 +261,7 @@
               </div>
             </div>
 
-             <!--Row 2 column 1-->
+            Row 2 column 1
              <div class="eight wide column">
               <p>AMOUNT:</p>
               <div class="ui input">
@@ -106,16 +269,23 @@
               </div>
             </div>
            </div>
-          </div>    
-    <!--Semantic UI css framework-->
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <!--J-Query cdn reference popper-->
+          </div>  
+          
+          <section id="main-weather">
+            <h1>Weather Dashboard</h1>
+
+          </section>
+        </div>-->
+        <!--J-Query cdn reference popper-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!--Semantic UI css framework-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    
     <!-- Moment.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- reference js scripts here -->
-    <script src="", defer></script>
+    <script src="/Users/sumayahassan/Downloads/exchange-away-main-2/style/script.js", defer></script>
 </body>
 </html>
 
