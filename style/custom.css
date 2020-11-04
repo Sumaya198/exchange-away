@@ -108,7 +108,9 @@ header {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.item{
+  color: white !important;
+}
 body div h2 span{
   color: orange;
 }
@@ -119,36 +121,62 @@ body div h2 span{
 
 .para {
   margin: 96px;
-  font-family: 'Raleway', sans-serif;
+  font-family: ‘Raleway’, sans-serif;
   color: white;
   font-weight: 700;
   font-size: 20px;
   position: relative;
   top: -90px;
 }
-
 .btn {
   left: -380px;
   width: 150px;
   font-size: smaller;
   position: relative;
-
-  
 }
-
-
 .selection {
   width: 45px;
   margin-bottom: 50px;
   align-self: center;
 }
-
 #curConverterBtn{
   top: 70px;
   box-shadow: 0.5px 1px 4px black;
   background-color: orange;
   border-radius: 15px;
 }
+#liveWeatherBtn{
+  top: -50px;
+   border: 0.1px white;
+   border-radius: 15px;
+}
+
+input {
+  border-radius: 25px;
+}
+/*
+Moved to allign to the middle section of the page Rk
+*/
+
+h4 {
+  font-size: 36px;
+  font-style: inherit;
+  text-align: center;
+  
+}
+
+
+#center-currency{
+  position: relative;
+  top: 400px;
+  left: 60px;
+  right: 10px ;
+  bottom: 10px ;
+  
+}
+
+
+
 
 #liveWeatherBtn{
   top: 70px;
@@ -310,8 +338,6 @@ i.home .icon{
   left: 1350px;
   top: 25px;
 }
-
-
 /*
 .logo{
   margin-top: 30px;
@@ -323,10 +349,7 @@ i.home .icon{
 }
 */
 
-/*1021px media query title
-change background
 
-672px remove menu and logo and show hamburger menu*/
 
 
 
