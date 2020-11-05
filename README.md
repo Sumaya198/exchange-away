@@ -38,13 +38,21 @@ Quickly, and effectively by giving the user direct access to a handy tool allowi
 
 ## Acceptance Criteria:
 GIVEN a currency with form inputs.
+
 WHEN I select my currency from dropdown.
+
 WHEN I select the currency I want to convert to.
+
 WHEN I enter the amount of money I have to convert.
+
 THEN I am presented with local currency rates for that country.
+
 THEN I am presented with the equivalent amount I will be getting based on exchange rate.
+
 WHEN I select the rates, I am able to store my search in the local history to refer back to.
+
 THEN I scroll down, and input the city to where I'm travelling.
+
 THEN I am presented with the weather forecast for that country. 
 
 ## Motivation
