@@ -172,6 +172,9 @@ h4 {
 .currencyTitle{
   font-family: 'Open Sans', sans-serif!important;
   font-size: 50px!important;
+  text-transform: uppercase!important;
+  font-weight: 700!important;
+  color: lightgray!important;
 }
 
 #center-currency{
@@ -195,6 +198,11 @@ h4 {
 
 input {
   border-radius: 25px;
+}
+.weatherBackground{
+
+  background-color:#B1AFD1;
+  background-image: url(./assets/images/greece-01.png);
 }
 
 i.home .icon{
@@ -272,6 +280,77 @@ i.home .icon{
   display: inline-block;
 }
 */
+
+.currencyBackground{
+  background-color: lightgray;
+}
+
+.exchangeRate{
+  font-family: serif!important;
+  font-size: 1.5rem!important;
+  text-align: center;
+}
+
+.rate1 {
+  font-family: serif!important;
+  font-size: 1.5rem!important;
+  text-align: center;
+  font-weight: 700!important;
+  position: relative;
+  top: 85px;
+}
+.rate2{
+  font-family: serif!important;
+  font-size: 1.5rem!important;
+  text-align: center;
+  font-weight: 700!important;
+  position: relative;
+  top: 85px;
+}
+
+.ui .input .currencyInput{
+  width: 200px;
+}
+
+#currBg{
+ background-image: url(../assets/images/ffinalBGsecond-01.png);
+ background-size: cover;
+ 
+  
+}
+
+.box{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 80px;
+  background: #111845a6;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
+}
+
+.box:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg)
+}
 
 .ui.grid.weather{
   position: relative;

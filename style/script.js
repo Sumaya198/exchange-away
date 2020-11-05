@@ -4,6 +4,8 @@ const API_URL = 'https://api.exchangeratesapi.io/latest';
 let html = '';
 
 $("#currentDay").text(moment().format("DD/M/YYYY"));
+$("#currentDayForCurrency").text(moment().format("dddd do YYYY"));
+
 
 $("#searchBtn").click(function(event) {
        console.log('button clicked')
@@ -19,7 +21,11 @@ $("#searchBtn").click(function(event) {
        let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=73b47f542215050a64d2b287364ee1d1`;
        console.log('weather infor', queryURL);
        
-
+       let cities = [];
+       cities.push(cityName);
+       let cityList = JSON.stringify(cities);
+       localStorage.setItem( "search-cities" , cityList);
+   
        let KELVIN = 273.15;
       
        $.ajax ({

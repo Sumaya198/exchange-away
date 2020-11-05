@@ -112,7 +112,7 @@
     </div>
 
     <!--Currency section-->
-<section>
+
    <div class="ui container">   
         <div>
           <a href="#currency"><button class="ui button orange" style="box-shadow: 1px 1px 10px black;">Currency Converter</button></a>
@@ -120,11 +120,14 @@
         </div>   
     </div>
   </header>
+  <main id="currBg">
 
   <div id="currency" class="ui container" style="margin-top:100px;">
     <div>
       <h1 class="ui center aligned header currencyTitle">Currency Converter</h1>
     </div>
+    
+              <p  id="currentDayForCurrency"> </p>
 	
 	
 	<div class="ui two column centered grid " style="margin-top:100px;">
@@ -221,14 +224,14 @@
 		    <div class="row">
             <!--Row 2 column 1-->
             <div class="eight wide column">
-              <p> Exchange Rate: </p>
-              <p  class="rate1"> </p>
+              <p class="exchangeRate box"> Exchange Rate: </p>
+              <p  class="rate1"> </p><br>
             </div>
 
              <!--Row 2 column 1-->
              <div class="eight wide column">
-              <p>Exchange Rate:</p>
-              <p class="rate2"></p>
+              <p class="exchangeRate box">Exchange Rate:</p>
+              <p class="rate2"></p><br>
             </div>
            </div>
 			
@@ -236,8 +239,7 @@
 			<div class="row">
             <!--Row 2 column 1-->
             <div class="eight wide column">
-              <p> Date : </p>
-              <p  class="date"> </p>
+              
             </div>
            </div>
 			
@@ -246,7 +248,7 @@
             <!--Row 2-->
            <div class="row">
             <!--Row 2 column 1-->
-            <div class="eight wide column">
+            <div class="eight wide center aligned column currencyInput">
               <p>CURRENCY I HAVE: </p>
               <div class="ui input">
                 <input type="text" placeholder="" name="amount1">
@@ -254,7 +256,7 @@
             </div>
 
              <!--Row 2 column 1-->
-             <div class="eight wide column">
+             <div class="eight center aligned wide column currencyInput">
               <p>CURRENCY I NEED:</p>
               <div class="ui input">
                 <input type="text" placeholder="" name="amount2">
@@ -262,11 +264,6 @@
             </div>
            </div>
          </div>
-	
-	
-	
-	
-
   </div>
   <div class="ui two column centered grid">
     <div class="column"></div>
@@ -278,13 +275,14 @@
     
  
 </section>
+</main>
 
 
       <!--Weather Dashboard-->
 
 
 
-      <section> 
+      <section class="weatherBackground"> 
         <div id="weather" class="ui centered grid">
             <div id="weather-section" class="ui container" style="margin-top:100px;">
               <div>
