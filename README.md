@@ -20,7 +20,7 @@ Exchange Away (EX Away – The best way to exchange).
 ## Website Title and Description
 Exchange-Away website will give you the best way to exchange your money, and save your valuable time when you travel. This is the core functionality we are offering. However, we are integrating this feature with the weather forecast as an extra feature made available to our prospective users to enable them get first hand up-to date weather information to where they are visiting.
 
-The website can be found at the following address ...
+The website can be found at the following address ...https://nikstar-1.github.io/exchange-away/.
 ## Who is our audience? 
 
 Tourists. But can be used by other people (business / holiday makers etc).
