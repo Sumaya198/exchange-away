@@ -8,6 +8,8 @@ $(document).ready(function(){
 
 
 
+    
+;
  $(".dropdown").click(function(){
 currency1=currencyCodes[$("input[name='country1']").val().toUpperCase()];
 currency2=currencyCodes[$("input[name='country2']").val().toUpperCase()];
