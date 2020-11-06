@@ -66,6 +66,9 @@ header {
 }
 
 
+.menu .item{
+  color: black !important;
+}
 
 
 
@@ -185,8 +188,6 @@ h4 {
   bottom: 10px ;
   
 }
-
-
 
 
 #liveWeatherBtn{
