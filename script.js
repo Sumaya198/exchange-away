@@ -3,31 +3,23 @@ var currency2;
 var rate1;
 var rate2;
 function callCurrenciesAndRates() {
-     currency1 =
-       currencyCodes[$("input[name='country1']").val().toUpperCase()];
-     currency2 =
-       currencyCodes[$("input[name='country2']").val().toUpperCase()];
-     console.log("first Currency", currency1);
-     console.log("second Currency", currency2);
-     if (currency1 && currency2) {
-       $.get(
-         "https://api.exchangeratesapi.io/latest?symbols=" +
-           currency1 +
-           "," +
-           currency2,
-         function (data, status) {
-           //$("input[name='amount1']").val(data.rates[currency1]);
-           //$("input[name='amount2']").val(data.rates[currency2]);
-           rate1 = data.rates[currency1];
-           rate2 = data.rates[currency2];
-           $(".rate1").html(rate1);
-           $(".rate2").html(rate2);
-           $(".date").html(data.date);
-         }
-       );
-     }
-   }
+  currency1 = currencyCodes[$("input[name='country1']").val().toUpperCase()];
+  currency2 = currencyCodes[$("input[name='country2']").val().toUpperCase()];
+  //GET https://api.exchangeratesapi.io/latest?symbols=USD,GBP HTTP/1.1 < from this i can now work and recieve the result
+  $.get(
+    `https://api.exchangeratesapi.io/latest?base=${currency1}&symbols=${currency2}`,
+    function (data, status) {
+      //Rates display
 
+      rate2 = data.rates[currency2];
+      //Get the rates from the API, and link to the html, This will show the latest exchange rates in the browser.
+
+      $(".rate2").html(rate2);
+      //Date to display
+      $(".date").html(data.date);
+    }
+  );
+}
 $(document).ready(function () {
   $(".ui.sidebar").sidebar("attach events", ".toc.item");
 
@@ -41,11 +33,10 @@ $(document).ready(function () {
   callCurrenciesAndRates();
 
   $(".dropdown").click(function () {
-     callCurrenciesAndRates();
-    
+    callCurrenciesAndRates();
   });
 
-  $("input[name='amount1']").keyup(function () {
+ /* $("input[name='amount1']").keyup(function () {
     var val1 = $("input[name='amount1']").val();
     var convertedVal = (val1 / rate1) * rate2;
     $("input[name='amount2']").val(convertedVal);
@@ -55,7 +46,30 @@ $(document).ready(function () {
     var convertedVal = (val1 / rate2) * rate1;
 
     $("input[name='amount1']").val(convertedVal);
-  });
+  });*/
+});
+
+
+const select = document.querySelectorAll("select");
+const input = document.querySelectorAll("input");
+const API_URL = "https://api.exchangeratesapi.io/latest";
+let html = "";
+
+$("#currentDay").text(moment().format("DD/M/YYYY"));
+$("#currentDayForCurrency").text(moment().format("dddd do MMMM YYYY"));
+
+//Takes the value entered in the input box and takes the value entered
+/*$("input[name='amount1']").keyup(function () {
+  var val1 = $("input[name='amount1']").val();
+  //Convert base rate to required currency - left hand side box
+  var convertedVal = (val1 / rate1) * rate2;
+  $("input[name='amount2']").val(convertedVal);
+});*/
+//Convert base currency right hand side box
+$("input[name='amount1']").keyup(function () {
+  var val1 = $("input[name='amount1']").val();
+  var convertedVal = (val1 * rate2) 
+   $("input[name='amount2']").val(convertedVal);
 });
 
 var currencyCodes = {
@@ -309,16 +323,13 @@ var currencyCodes = {
   UA: "UAH",
   QA: "QAR",
   MZ: "MZN",
+  EU: "EUR",
 };
 
-const select = document.querySelectorAll("select");
-const input = document.querySelectorAll("input");
-const API_URL = "https://api.exchangeratesapi.io/latest";
-let html = "";
-
-$("#currentDay").text(moment().format("DD/M/YYYY"));
-$("#currentDayForCurrency").text(moment().format("dddd do MMMM YYYY"));
-
+// Link from the exchangeratesapi.io -The one i have used is the > request specific exchange rates by setting the symbols parameter usd and gbp
+// Exchange rates between the two currencies were in respect of the base currencies usd and gbp i understood that then got the base currencies accordingly
+// A converstion logic added devided by the first and multiplied by the second currency
+// Need to work on getting my currency converter onto the centre of the page
 $("#searchBtn").click(function (event) {
   console.log("button ccclicked");
   getWeather();
@@ -419,10 +430,14 @@ function saveCurrencyLocally() {
 }
 
 function loadCurrencyLocally() {
-  const loadCurLocally = JSON.parse(localStorage.getItem("currency-searched"));
-  console.log("search currency", loadCurLocally);
-  $("#countryOne").dropdown("set selected", loadCurLocally.currencyOne);
-  $("#countryTwo").dropdown("set selected", loadCurLocally.currencyTwo);
+     const loadCurLocally = JSON.parse(localStorage.getItem("currency-searched"));
+     console.log("search currency", loadCurLocally);
+     if (loadCurLocally){
+          $("#countryOne").dropdown("set selected", loadCurLocally.currencyOne);
+          $("#countryTwo").dropdown("set selected", loadCurLocally.currencyTwo);
+          
+
+     }
 }
 
 function saveWeatherToStorage() {
