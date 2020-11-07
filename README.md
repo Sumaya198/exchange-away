@@ -46,7 +46,7 @@ THEN I scroll down, and input the city to where I'm travelling.
 THEN I am presented with the weather forecast for that country. 
 
 ## Motivation
-The motivation to build this website has come from myself, and Sumaya being frequent travellers ourselves. We wanted to build a website that will conviniently exchange our money to the local currency. We believe our website will help all users plan ahead, and effectively search major currencies. We want to help users by giving them a convinient tool which is accurate and instant. 
+The motivation to build this website has come from us being frequent travellers ourselves. We wanted to build a website that will conviniently exchange our money to the local currency. We believe our website will help all users plan ahead, and effectively search major currencies. We want to help users by giving them a convinient tool which is accurate and instant. 
 
 ## What were the technologies used?
 The technologies used are Semantic UI as our framework, we chose this particular framework because it has a lot of building tools for example, incorporated flags, side bar, currency symbols menu/nav bar. 
