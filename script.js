@@ -36,7 +36,7 @@ $(document).ready(function () {
     callCurrenciesAndRates();
   });
 
- /* $("input[name='amount1']").keyup(function () {
+  /* $("input[name='amount1']").keyup(function () {
     var val1 = $("input[name='amount1']").val();
     var convertedVal = (val1 / rate1) * rate2;
     $("input[name='amount2']").val(convertedVal);
@@ -48,7 +48,6 @@ $(document).ready(function () {
     $("input[name='amount1']").val(convertedVal);
   });*/
 });
-
 
 const select = document.querySelectorAll("select");
 const input = document.querySelectorAll("input");
@@ -68,8 +67,8 @@ $("#currentDayForCurrency").text(moment().format("dddd do MMMM YYYY"));
 //Convert base currency right hand side box
 $("input[name='amount1']").keyup(function () {
   var val1 = $("input[name='amount1']").val();
-  var convertedVal = (val1 * rate2) 
-   $("input[name='amount2']").val(convertedVal);
+  var convertedVal = val1 * rate2;
+  $("input[name='amount2']").val(convertedVal);
 });
 
 var currencyCodes = {
@@ -406,18 +405,6 @@ function getFiveDayForcast() {
   });
 }
 
-//   function saveCurrencyToStorage(){
-//          let cityCurrencyValue = $(".country").HTML();
-
-//          let currency;
-//          if(localStorage.getItem('currency-searched') === null){
-//            currency = [];
-//          }else{
-//           currency = JSON.parse(localStorage.getItem('currency-searched'))
-//          }
-//          currency.push(cityCurrencyValue);
-//          localStorage.setItem('currency-searched', JSON.stringify(currency));
-//        }
 
 function saveCurrencyLocally() {
   let currencyObj = {
@@ -430,14 +417,12 @@ function saveCurrencyLocally() {
 }
 
 function loadCurrencyLocally() {
-     const loadCurLocally = JSON.parse(localStorage.getItem("currency-searched"));
-     console.log("search currency", loadCurLocally);
-     if (loadCurLocally){
-          $("#countryOne").dropdown("set selected", loadCurLocally.currencyOne);
-          $("#countryTwo").dropdown("set selected", loadCurLocally.currencyTwo);
-          
-
-     }
+  const loadCurLocally = JSON.parse(localStorage.getItem("currency-searched"));
+  console.log("search currency", loadCurLocally);
+  if (loadCurLocally) {
+    $("#countryOne").dropdown("set selected", loadCurLocally.currencyOne);
+    $("#countryTwo").dropdown("set selected", loadCurLocally.currencyTwo);
+  }
 }
 
 function saveWeatherToStorage() {

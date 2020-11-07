@@ -109,9 +109,6 @@ https://semantic-ui.com/collections/menu.html
 **Weather Dashboard Desktop.**
 !["Page 3"](Desktop-WeatherDashboard.png "Weather Dashboard.")
 
-**Weather Dashboard 4 sample.**
-!["Page 4"](Desktop-Weather4.png "Weather 4.")
-
 
 
 
