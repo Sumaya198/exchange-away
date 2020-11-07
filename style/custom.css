@@ -1,18 +1,36 @@
 * {
-  margin:0; padding: 0;
-  box-sizing: border-box; -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   outline: 0;
-
-  
-}
-body {
-  height: 100vh;
 }
 
-.transbg{
-background-color: transparent!important;
+#currentDayForCurrency {
+  text-align: center;
+  margin: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
+#currentDay {
+  font-size: 1rem;
+}
+
+#currencyBackground {
+  background-image: url(../assets/images/backgroundTwo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#menu {
+  background: transparent !important;
+}
+
+body div h2 span {
+  color: orange;
+}
 
 header {
   background-image: url(../assets/images/front-page-background.png);
@@ -23,195 +41,51 @@ header {
   background-attachment: fixed;
 }
 
-#menu {
-  background: transparent!important;
-  
-}
-
-.ui.weather {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 100px;
-}
-
-
-#weather-section {
-  
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  max-width: fit-content;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-}
-
-.box{
-  background-color: white;
-  border-radius: 30px;
-  align-items: center;
-  padding: 10px;
-}
-
-.box > i{
-  font-size: 14px;
-  color:#777;
-  cursor: pointer;
-}
-
-
-.menu .item{
+.country {
   color: black !important;
 }
 
-.menu{
-  border: 0px!important;
-}
-.navbar{
-  background-color: transparent !important; 
-}
-
-.sc-main.segment{
-  min-height: 100vh;
-}
-
-
-.welcome {
-  position: relative;
-  top:120px;
-  font-size: 20px!important;
-  display:flex!important;
-  right: 120px;
-}
-
-.slogan{
-  position: relative;
-  top: 67px;
-  font-family: 'Raleway', sans-serif!important;
-  right: 200px;
-}
-.title{
-  font-size: 90px!important;
-  position: relative;
-  font-family: 'DM Serif Display', serif;
-  right: -50px;
-  top: 90px;
-  display: flex;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.item{
-  color: white !important;
-}
-body div h2 span{
-  color: orange;
-}
-
-.sideBar{
-  font-size: 10px;
-}
-
-.para {
-  margin: 96px;
-  font-family: ‘Raleway’, sans-serif;
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-  position: relative;
-  top: -90px;
-}
-.btn {
-  left: -380px;
-  width: 150px;
-  font-size: smaller;
-  position: relative;
-}
-.selection {
-  width: 45px;
-  margin-bottom: 50px;
-  align-self: center;
-}
-#curConverterBtn{
-  top: 70px;
-  box-shadow: 0.5px 1px 4px black;
-  background-color: orange;
-  border-radius: 15px;
-}
-#liveWeatherBtn{
-   top: -50px;
-   border: 0.1px white;
-   border-radius: 15px;
-}
-
-input {
-  border-radius: 25px;
-}
-
-h4 {
-  font-size: 36px;
-  font-style: inherit;
-  text-align: center;
-}
-
 .currencyTitle {
-  font-family: 'Open Sans', sans-serif!important;
-  font-size: 50px!important;
-  text-transform: uppercase!important;
-  color: #868a8f!important;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 50px !important;
+  text-transform: uppercase !important;
+  color: #868a8f !important;
 }
 
-.weatherTitle{
-  font-family: 'Open Sans', sans-serif!important;
-  font-size: 50px!important;
-  text-transform: uppercase!important;
-  color: #868a8f!important;
+.dateSize {
+  font-size: 15px !important;
 }
 
+.exchangeBtn {
+  color: grey!important;
+}
 
-#currentDayForCurrency{
+.fixed {
+  padding-right: 8% !important;
+  padding-left: 8% !important;
+}
+
+.location {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.menu {
+  border: 0px !important;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.rate2 {
+  font-family: serif !important;
+  font-size: 1.5rem !important;
   text-align: center;
-  margin: 30px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-#center-currency{
+  font-weight: 700 !important;
   position: relative;
-  top: 400px;
-  left: 60px;
-  right: 10px ;
-  bottom: 10px ;
-  
-}
-
-#liveWeatherBtn{
-  top: 70px;
-  box-shadow: 1px 1px 10px black;
-   border: 0.1px white;
-   border-radius: 15px;
-}
-
-input {
-  border-radius: 25px;
-}
-.weatherBackground{
- background-image: url(../assets/images/weather-bg.jpg);
- background-repeat: no-repeat;
- background-size: cover;
-}
-
-i.home .icon{
-  width:10px;
-}
-.item .home{
-  margin: 100px!important;
-}
-
-
-.fixed{
-  padding-right: 8%!important;
-  padding-left: 8%!important;
+  top: 40px;
 }
 
 .search {
@@ -220,27 +94,11 @@ i.home .icon{
   display: flex;
 }
 
-.searchTerm {
-  width: 100%;
-  border: 3px solid #00B4CC;
-  border-right: none;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #9DBFAF;
-  height: 36px;
-}
-
-.searchTerm:focus{
-  color: #5E5BA5;
-}
-
 .searchButton {
   width: 40px;
   height: 36px;
-  border: 1px solid #5E5BA5;
-  background: #5E5BA5;
+  border: 1px solid #5e5ba5;
+  background: #5e5ba5;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -248,268 +106,32 @@ i.home .icon{
   font-size: 20px;
 }
 
-.ui.segment.weather{
-  height: 220px;
-  transition: 0.3s ease-in-out;
-}
-
-.ui.segment.weather:hover{
-   height: 520px;
-}
-
-.ui.segment.weather .weatherInfo{
-  position: relative;
-  margin-top: -150px;
-  padding: 10px 15px;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.ui.segment.weather:hover .weatherInfo{
-  visibility: visible;
-  opacity: 1;
-  margin-top: 10px;
-  
-}
-
-.ui.segment.weather:hover .hideText{
-  display: none;
-  opacity: 0;
-}
-
-.wrap{
-  width: 30%;
-  position: absolute;
- 
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.location{
-  font-family: sans-serif;
-  font-size: 4rem;
-}
-
-.currencyBackground{
-  background-color: lightgray;
-}
-
-.exchangeRate{
-  font-family: serif!important;
-  font-size: 1.5rem!important;
-  
-}
-
-.rate1 {
-  font-family: serif!important;
-  font-size: 1.5rem!important;
-  text-align: center;
-  font-weight: 700!important;
-  position: relative;
-  top: 85px;
-}
-.rate2{
-  font-family: serif!important;
-  font-size: 1.5rem!important;
-  text-align: center;
-  font-weight: 700!important;
-  position: relative;
-  top: 85px;
-}
-
-.ui .input .currencyInput{
-  width: 200px;
-}
-
-.ui .search .selection .dropdown{
-  width: 200px;
-}
-
-#currBg{
- background-image: url(../assets/images/backgroundTwo.jpg);
- background-size: cover;
- background-attachment: fixed;
-  
-}
-
-
-.customHeightDropdown{
-  height: 25px;
-}
-.countryHeightDropdown{
-  position: relative;
-  top: 50px;
-}
-
-.box{
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 75px;
-  background: #111845a6;
-  box-sizing: border-box;
-  overflow: hidden;
-  box-shadow: 0 7px 30px rgb(23, 32, 90);
-  border: 2px solid #2a3cad;
-  color: white;
-  padding: 20px;
-}
-
-.box:before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height:100%;
-  background: rgba(255,255,255,0.1);
-  transition:0.5s;
-  pointer-events: none;
-}
-
-.box:hover:before{
-  left:-50%;
-  transform: skewX(-5deg)
-}
-
-.ui.grid.weather{
-  position: relative;
-  width: 2000px;
-  top: -100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 30px;
-}
-
-.ui.grid.weather .ui.card{
-  position: relative;
-  top: 120px;
-  left: -400px;
-  width: 400px;
-  height: 215px;
-  background: #fff;
-  margin: 30px 10px;
-  padding: 20px 45px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
-  transition: 0.3s ease-in-out;
-  bottom: 20px;
-}
-
-.ui.grid.weather .ui.card:hover{
-  height: 530px;
-}
-
-.dateSize{
-  font-size: 15px!important;
-  
-}
-
-.location{
-  font-size: 40px;
-  text-transform: uppercase;
-  color: gray;
-}
-
-
-.ui.grid.weather .ui.card .imgBx img{
-  max-width: 100%;
-  border-radius: 4px;
-}
-
-.ui.grid.weather .ui.card .content{
-  position: relative;
-  margin-top: -120px;
-  top: 50px;
-  padding: 10px 15px;
-  text-align: center;
-  color: #111;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s ease-in-out;
-}
-
-.ui.grid.weather .ui.card:hover .content{
-  visibility: visible;
-  opacity: 1;
-  margin-top: -100px;
-}
-
-.rightt{
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-left: 10.1rem;
-}
-
-.number{
-  font-size: 1.7rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 200;
-  color: #333;
-  line-height: 1.2;
-  position: relative;
-  top: -80px;
-  
-}
-
-.number-title{
-  font-size: .55rem;
-  color: #666;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  position: relative;
-  top: -80px;
-}
-#currentDay{
-  font-size: 1rem;
-}
-.temp{
-  color:#555;
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 2.1rem;
-  padding: 0 0 3px 0;
-  position: relative;
- 
-}
-
-
-.hidden.menu{
-  display:none;
-}
-.masthead.segment{
-  min-height: 700px;
-  padding: 1em 0em;
-}
-
 .secondary.pointing.menu .toc.item {
   display: none;
 }
 
-.search .icon{
-  cursor: pointer;
+.ui.weather {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 50px;
 }
 
-.country{
-  color: black!important;
+.weatherBackground {
+  background-image: url(../assets/images/weather-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.weatherTitle {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 50px !important;
+  text-transform: uppercase !important;
+  color: #868a8f !important;
+}
 
 @media (max-width: 798px) {
-   .ui.fixed.menu {
-     display: none!important;
-   }
+  .ui.fixed.menu {
+    display: none !important;
+  }
   .secondary.pointing.menu .item,
   .secondary.pointing.menu .menu {
     display: none;
@@ -517,43 +139,27 @@ i.home .icon{
   .secondary.pointing.menu .toc.item {
     display: block;
   }
-  .masthead.segment{
+  .masthead.segment {
     min-height: 350px;
   }
-  .masthead h1.ui.header{
+  .masthead h1.ui.header {
     font-size: 2em;
     margin-top: 1.5em;
   }
-  .masthead h2{
+  .masthead h2 {
     margin-top: 0.5em;
     font-size: 1.5em;
   }
-  .weatherTitle{
-    font-size: 30px!important;
+  .weatherTitle {
+    font-size: 30px !important;
   }
-  .Welcome{
-    font-size: 22px!important;
+  .Welcome {
+    font-size: 22px !important;
     position: relative;
     left: 93px;
   }
-  .tagline{
+  .tagline {
     position: relative;
     left: 70px;
-
-
   }
-}
-
-
-
-@media (max-width: 375px){
-  /*smaller phone*/
-}
-
-
-@media only screen and (max-width: 700px){
-
-.secondary.pointing.menu .toc.item {
-    display: block;
-}
 }
