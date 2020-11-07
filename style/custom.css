@@ -28,8 +28,6 @@ header {
   
 }
 
-
-
 .ui.weather {
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 100px;
@@ -67,15 +65,6 @@ header {
 .menu .item{
   color: black !important;
 }
-
-
-
-
-
-
-
-
-
 
 .menu{
   border: 0px!important;
@@ -311,7 +300,7 @@ i.home .icon{
 .exchangeRate{
   font-family: serif!important;
   font-size: 1.5rem!important;
-  text-align: center;
+  
 }
 
 .rate1 {
@@ -345,7 +334,6 @@ i.home .icon{
  background-attachment: fixed;
   
 }
-
 
 
 .customHeightDropdown{
@@ -541,6 +529,20 @@ i.home .icon{
   .masthead h2{
     margin-top: 0.5em;
     font-size: 1.5em;
+  }
+  .weatherTitle{
+    font-size: 30px!important;
+  }
+  .Welcome{
+    font-size: 22px!important;
+    position: relative;
+    left: 93px;
+  }
+  .tagline{
+    position: relative;
+    left: 70px;
+
+
   }
 }
 
