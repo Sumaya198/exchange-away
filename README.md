@@ -96,25 +96,13 @@ https://semantic-ui.com/collections/menu.html
 ## Screenshots:
 
 **Work Main Mobile UI.**
-!["Start Page"](M-ExAway.png "Start page Mobile First UI.")
-
-**Currency Converter complete page.**
-!["Page 2"](M-CurrencyConverter.png "Currency Converter completed page.")
-
-**Weather Dashboard sample.**
-!["Page 3"](M-Weather1.png "Weather Dashboard.")
-
-**Currency Converter complete page.**
-!["Page 3](M-Weather3.png "Weather 3.")
-
-**Work Weather Continued.**
-!["Page 4"](M-weather4.png "Weather 4.")
+!["Start Page"](MasterMobileFirst.png "Mobile First UI.")
 
 **Ex-Away Desktop sample.**
 !["Start Page"](Desktop-ExchangeAway.png "X-Away.")
 
 **Currency Converter Desktop.**
-!["Start Page"](Desktop-CurrencyConverter.png "Currency Converter.")
+!["Currency Page"](Desktop-CurrencyConverter.png "Currency Converter.")
 
 **Weather Dashboard Desktop.**
 !["Page 3"](Desktop-WeatherDashboard.png "Weather Dashboard.")
