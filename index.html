@@ -20,14 +20,7 @@
   <link rel="stylesheet" type="text/css" href="assets/dist/components/sidebar.min.css">
   <link rel="stylesheet" type="text/css" href="assets/dist/components/icon.css">
   <link rel="stylesheet" type="text/css" href="assets/dist/components/input.css">
-  
   <link rel="stylesheet" type="text/css" href="assets/dist/components/search.css">
-  
-  
-  
-  
-  
-
   <!--Add favicon-->
   <link rel="icon" type="image/jpg" href="./assets/images/smaller-logo-01.png"/> 
   <!--Add custom css-->
@@ -36,9 +29,6 @@
 </head>
 <body>
 
-  
-  
-  
     <!-- Site content !-->
   <header id="main">
    
@@ -77,9 +67,9 @@
       <div class="ui two column grid padded">
         <div class="row text">
           <div class="colum" style="margin-top: 60px;">
-            <h4 class="ui" style="font-size: 30px; color: white; margin-right: 200px;">WELCOME TO</h4>
+            <h4 class="ui Welcome" style="font-size: 30px; color: white; margin-right: 200px;">WELCOME TO</h4>
             <h2 class="ui center aligned header" style="color: white; font-size: 90px;">EX <span class="ui orange">AWAY</span></h2>
-            <p class="ui header" style="color: white;">BEST WAY TO EXCHANGE</p>
+            <p class="ui header tagline" style="color: white;">BEST WAY TO EXCHANGE</p>
           </div>
         </div>
       </div>
@@ -127,7 +117,8 @@
                 <div class="item country" data-value="hr"><i class="hr flag"></i><span><b>&#107;&#110; </b></span>Croatia<div style="margin-left : 20px; float:right;">HRK</div></div>
                 <div class="item country" data-value="cz"><i class="cz flag"></i><span><b>&#75;&#269; </b></span>Czech Republic<div style="margin-left : 20px; float:right;">CZK</div></div>
                 <div class="item country" data-value="dk"><i class="dk flag"></i><span><b>&#107;&#114; </b></span>Denmark<div style="margin-left : 20px; float:right;">DKK</div></div>
-                <div class="item country" data-value="gb"><i class="gb flag"></i><span><b>&pound;</b> </span>England<div style="margin-left : 20px; float:right;">GBP</div></div> 
+                <div class="item country" data-value="gb"><i class="gb flag"></i><span><b>&pound;</b> </span>England<div style="margin-left : 20px; float:right;">GBP</div></div>
+                <div class="item country" data-value="eu"><i class="eu flag"></i><span><b></b></span> European Union <div style="margin-left : 20px; float:right;">EUR</div></div> 
                 <div class="item country" data-value="hk"><i class="hk flag"></i><span><b>&#36; </b></span>Hong Kong<div style="margin-left : 20px; float:right;">HKD</div></div>
                 <div class="item country" data-value="hu"><i class="hu flag"></i><span><b>&#70;&#116; </b></span>Hungary<div style="margin-left : 20px; float:right;">HUF</div></div>
                 <div class="item country" data-value="is"><i class="is flag"></i><span><b>&#107;&#114; </b></span>Iceland<div style="margin-left : 20px; float:right;">ISK</div></div>
@@ -201,15 +192,19 @@
 
             </div>
           
-		    <div class="row">
+		   
             <!--Row 2 column 1-->
-            <div class="eight wide column">
-            </div>
+            <div class=“row”>
+              <!--Row 2 column 1-->
+              <div class=“eight wide column”>
+                <p class=“exchangeRate box”> </p>
+                <p class=“rate1"> </p><br>
+              </div>
 
              <!--Row 2 column 1-->
              <div class="eight wide column">
-              <p class="exchangeRate box">Exchange Rate:</p>
-              <p class="rate2"></p><br>
+              <button class="ui massive inverted violet button">Exchange Rate:</button>
+              <p class="rate2"></p>
             </div>
            </div>
 			
@@ -228,7 +223,7 @@
             <!--Row 2 column 1-->
             <div class="eight wide center aligned column currencyInput" style="margin-top: 30px;">
               <p>CURRENCY I HAVE: </p>
-              <div class="ui huge input">
+              <div class="ui input">
                 <input type="text" placeholder="your amount..." name="amount1">
               </div>
             </div>
@@ -236,7 +231,7 @@
              <!--Row 2 column 1-->
              <div class="eight center aligned wide column currencyInput" style="margin-top: 30px;">
               <p class="currencyIWTitle">CURRENCY I NEED:</p>
-              <div class="ui huge input">
+              <div class="ui input disabled">
                 <input type="text" placeholder="amount you want..." name="amount2">
               </div>
             </div>
