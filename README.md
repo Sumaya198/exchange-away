@@ -70,10 +70,12 @@ Nikstar-1
 To achieve all results in my browser, and see the funtionality come together.
 
 ## Challenges 
-Sumaya198 ...
+Sumaya198 
+The challenges I faced in the project was getting the sidebar to work. It required extra components and learning the semantic ui framework to ensure the webpage was responsive on all devices. 
 
 ## Success's
-Sumaya198...
+Sumaya198
+I am proud of the way we worked together and produced a beautiful website that we can update and improve at a future date.
 
 ## Directions for future development
 Incorporate Rate alerts
