@@ -55,7 +55,7 @@ const API_URL = "https://api.exchangeratesapi.io/latest";
 let html = "";
 
 $("#currentDay").text(moment().format("DD/M/YYYY"));
-$("#currentDayForCurrency").text(moment().format("dddd do MMMM YYYY"));
+$("#currentDayForCurrency").text(moment().format("dddd Do MMMM YYYY"));
 
 //Takes the value entered in the input box and takes the value entered
 /*$("input[name='amount1']").keyup(function () {
